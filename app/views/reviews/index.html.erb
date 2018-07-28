@@ -1,13 +1,9 @@
 <div class="container">
   <div class="starter-template">
-    <%= link_to 'Add New Restaurant', new_restaurant_path %>
     <% @restaurants.each do |restaurant| %>
       <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
       <p><%= restaurant.address %></p>
       <p><%= restaurant.category %></p>
     <% end %>
-
   </div>
 </div>
-
-
